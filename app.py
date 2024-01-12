@@ -1,9 +1,11 @@
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import gradio as gr
+import spaces
 
 tokenizer = AutoTokenizer.from_pretrained("merve/chatgpt-prompts-bart-long")
 model = AutoModelForSeq2SeqLM.from_pretrained("merve/chatgpt-prompts-bart-long", from_tf=True)
 
+@spaces.GPU
 def generate(prompt):
 
     batch = tokenizer(prompt, return_tensors="pt")
