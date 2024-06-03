@@ -1,5 +1,6 @@
 tensorflow
-transformers==3.5.0
+transformers
 torch
-sentencepiece==0.1.91
-spaces==0.16.3
+sentencepiece
+spaces
+tf-keras
