@@ -1,5 +1,5 @@
 tensorflow
 transformers==3.5.0
 torch
-sentencepiece
+sentencepiece==0.1.6
 spaces==0.16.3
