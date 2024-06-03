@@ -1,4 +1,4 @@
 tensorflow
-transformers
+transformers==3.5.0
 torch
 spaces
